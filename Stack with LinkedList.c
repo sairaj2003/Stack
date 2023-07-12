@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 #define M ((node*)malloc(sizeof(struct node)))
-
+//The line #define M ((node*)malloc(sizeof(struct node))) is a preprocessor directive in C that defines a macro named M. Macros are used to define shorthand notations or to perform text substitution in your code.
+//In this specific case, the M macro is defined as an expression that allocates memory for a struct node using malloc and then casts the result to a node* pointer type.
 typedef struct node
 {
     int data;
@@ -16,7 +17,7 @@ int main()
 
     do
     {
-        printf("\n---------------------------------------------------------");
+        printf("\n---------------------------------------------------------");    
         printf("\n                        Operations                       ");
         printf("\n---------------------------------------------------------");
         printf("\n1.push\n2.pop\n3.Display");
